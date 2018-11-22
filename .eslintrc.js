@@ -9,6 +9,8 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+    // より厳しいルールにするには`plugin:vue/strongly-recommended` もしくは `plugin:vue/recommended` に切り替えることを検討してください。
     "plugin:vue/recommended",
     "plugin:prettier/recommended"
   ],
@@ -16,16 +18,12 @@ module.exports = {
     'vue'
   ],
   rules: {
-    "semi": [ 2, "never" ],
+    "semi": [2, "never"],
     "no-console": "off",
-    "no-empty": "off",
     "vue/max-attributes-per-line": "off",
-    "vue/require-default-prop": "off",
     "prettier/prettier": [
       "error",
       {
-        "arrowParens": "always",
-        "bracketSpacing": true,
         "printWidth": 100,
         "semi": false,
         "singleQuote": true
