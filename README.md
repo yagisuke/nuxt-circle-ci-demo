@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/yagisuke/nuxt-circle-ci-demo/tree/master.svg?style=svg)](https://circleci.com/gh/yagisuke/nuxt-circle-ci-demo/tree/master)
+
 # nuxt-circle-ci-demo
 
 > Nuxt.js project
