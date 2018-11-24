@@ -6,13 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "ava",
-    "precommit": "npm run lint"
+    "build": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "npm run build && gh-pages -d dist -m 'chore: update [skip ci]'"
   },
   "dependencies": {
     "nuxt": "^2.3.2"
@@ -25,6 +23,7 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-vue": "^4.7.1",
+    "gh-pages": "^2.0.1",
     "jsdom": "^13.0.0",
     "prettier": "^1.15.2"
   }
