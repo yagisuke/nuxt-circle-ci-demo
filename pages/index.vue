@@ -5,7 +5,13 @@
       <h1 class="title">nuxt-circle-ci-demo</h1>
       <h2 class="subtitle">Nuxt.js project</h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
+        <a
+          href="https://qiita.com/yagi_suke/private/03a2411fdc3137ce657a"
+          target="_blank"
+          class="button--green"
+        >
+          Documentation
+        </a>
         <a
           href="https://github.com/yagisuke/nuxt-circle-ci-demo"
           target="_blank"
