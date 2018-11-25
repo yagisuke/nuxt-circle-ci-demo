@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "ava",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate && touch dist/.nojekyll",
-    "deploy:gh-pages": "npm run generate:gh-pages && gh-pages -d dist -m 'chore: update [skip ci]'"
+    "deploy:gh-pages": "npm run generate:gh-pages && gh-pages -d dist -m 'chore: update [skip ci]' -t"
   },
   "dependencies": {
     "nuxt": "^2.3.2"
